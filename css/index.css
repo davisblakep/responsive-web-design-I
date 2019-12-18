@@ -78,6 +78,32 @@ a {
 	text-decoration: none;
 }
 
+.NavClass {
+	display: flex;
+	justify-content: space-between;
+	padding: 3%;
+	/* position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white; */ 
+}
+
+.NavLinksClass {
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	padding: 1%;
+	align-content: center;	
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.NavLinksClass a {
+	
+	align-content: center;
+	color: dimgray;
+}
+
 
 
 /* Header containing Innovation on Demand, Get Started, 
@@ -94,7 +120,7 @@ h1 {
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 8%;
-	margin-top: 10%;
+	margin-top: 4%;
 }
 
 
@@ -120,7 +146,7 @@ h1 {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 8%;
-	margin-top: 3%;
+	margin-top: 1%;
 	margin-left: 4%;
 	margin-right: 4%;
 	margin-bottom: 8%;
@@ -190,8 +216,8 @@ h1 {
 
 footer {
 	text-align: center;
-	padding-bottom: 50px;
-	margin-bottom: 50px;
+	padding-bottom: 2%;
+	margin-bottom: 4%;
 }
 
 
@@ -201,31 +227,7 @@ footer {
 
 /* SERVICES PAGE */
 
-.servicesNavClass {
-	display: flex;
-	justify-content: space-between;
-	padding: 2%;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: white;
-}
 
-.servicesNavLinksClass {
-	display: flex;
-	justify-content: space-between;
-	width: 60%;
-	padding: 1%;
-	align-content: center;	
-	margin-left: 1%;
-	margin-right: 1%;
-}
-
-.servicesNavLinksClass a {
-	
-	align-content: center;
-	color: dimgray;
-}
 
 .services-header-img {
 	margin: 4%;
@@ -322,4 +324,57 @@ footer {
 
 .product-header-img {
 	margin: 4%;
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+
+@media (max-width: 800px){
+.NavClass {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+.NavLinksClass {
+    justify-content: space-between;
+    width: 99%;
+    margin: 3%;
+}
+.innovationBoxSecion {
+    margin-top: 2%;
+}
+
+.innovationBoxSecion img {
+    display: none;
+}
+
+.topSectionClass {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+}
+
+.bottomSectionClass {
+    padding-top: 2%;
+    margin-top: 2%;
+    padding-bottom: 5%;
+}
+
+.contactSectionClass {
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+footer {
+    margin-top: 1%;
+}
+
+}
+
+@media (max-width: 500px){
+body {background-color: red;}
 }
