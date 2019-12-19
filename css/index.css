@@ -184,15 +184,7 @@ h1 {
 	border-bottom: 2px solid black;
 }
 
-.servicesDivClass {
-	width: 30%;
-}
-
-.productDivClass {
-	width: 30%;
-}
-
-.visionDivClass {
+.servicesDivClass, .productDivClass, .visionDivClass {
 	width: 30%;
 }
 
@@ -376,5 +368,52 @@ footer {
 }
 
 @media (max-width: 500px){
-body {background-color: red;}
+.NavLinksClass {
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    
+}
+.NavClass a {
+    padding-bottom: 3%;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+
+}
+.innovationBoxSecion {
+    margin-bottom: 12%;
+}
+.topSectionClass {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    height: 44vh;
+}
+
+.featuresDivClass, .aboutDivClass {
+    width: 95%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    margin-left: 0%;
+}
+
+.bottomSectionClass {
+    flex-direction: column;
+    padding-top: 4%;
+    height: 65vh;
+    width: 90%;
+}
+
+.servicesDivClass, .productDivClass, .visionDivClass {
+	width: 95%;
+}
+.contactSectionClass {
+    margin-top: 6%;
+}
+
+footer {
+    padding-top: 4%;
+}
+
 }
