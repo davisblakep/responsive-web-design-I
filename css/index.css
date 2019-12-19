@@ -102,6 +102,8 @@ a {
 
 
 
+
+
 /* Header containing Innovation on Demand, Get Started, 
 and the circle photo */
 
@@ -203,6 +205,95 @@ footer {
 	margin-bottom: 4%;
 }
 
+/* Services Page services.html */
+
+.services-header-img {
+	margin: 4%;
+    margin-top: 2%;
+    width: 92%;
+}
+
+.servicesHeaderClass {
+	display: flex;
+	margin: 4%;
+	margin-bottom: 6%;
+	border-bottom: 2px solid black;
+	padding-bottom: 6%;
+	font-size: 18px;
+}
+
+.servicesHeaderDivClass {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+/* 2 Column 6 Box Section */
+
+.twoColumn6BoxSectionClass {
+	display: flex;
+	height: 95%;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-content: space-between;
+	margin: 1%;
+	margin-bottom: 7%;
+}
+
+.twoColumn6BoxSectionClass div {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	width: 46%;
+	box-sizing: border-box;
+	align-items: flex-start;
+	padding: 2%;
+	background-color:rgb(235, 235, 235);
+}
+
+.twoColumn6BoxSectionClass button {
+	margin-top: 6%;
+}
+
+.bottomSectionWithPhoto {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 6%;
+	padding-bottom: 8%;
+	margin-left: 4%;
+	margin-right: 4%;
+	flex-direction: row;
+	border-top: 2px solid black;	
+}
+
+/* Bottom Facts Section with Photo */
+
+.services-info-img {
+	width: 48%;
+	height: 48%;
+}
+
+.bottomSectionWithoutPhoto {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-right: 10%;
+}
+
+
+.bullet li {
+	list-style-type: square;
+	
+}
+
+.bullet {
+	box-sizing: border-box;
+	padding-left: 7%;
+	padding-top: 3%;
+}
+
 
 /* Media Queries for Responsive Design */
 
@@ -250,6 +341,21 @@ footer {
 footer {
     margin-top: 1%;
 }
+/* services 800px max width */
+
+.services-header-img {
+    display: none;
+}
+
+.services-header-img-tablet {
+    background-image: url('../img/services-header-tablet-size.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 92%;
+    margin-left: 4%;    
+}
+
 }
 
 /* Mobile Responive Section 500px Max Width */
@@ -305,4 +411,50 @@ footer {
 footer {
     padding-top: 4%;
 }
+
+/* services page mobile sizing */
+
+.services-header-img-tablet {
+    display:none;
+}
+
+.services-header-img-mobile {
+    background-image: url('../img/services-header-tablet-size.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+
+.servicesHeaderClass {
+    margin-top: 2%;
+}
+
+.twoColumn6BoxSectionClass {
+    flex-direction: column;
+}
+
+.twoColumn6BoxSectionClass div {
+    width: 94%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+}
+
+.twoColumn6BoxSectionClass div {
+    align-items: center;
+}
+
+.twoColumn6BoxSectionClass button {
+    padding: 2% 18%;
+    font-size: 15px;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.services-info-img {
+    display: none;
+}
+
 }
