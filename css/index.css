@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 
 
-/* First Page */
+/* First Page index.html */
 
 /* Top Nav Section */
 
@@ -82,10 +82,6 @@ a {
 	display: flex;
 	justify-content: space-between;
 	padding: 3%;
-	/* position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: white; */ 
 }
 
 .NavLinksClass {
@@ -153,14 +149,9 @@ h1 {
 	border-top: 2px solid black;
 }
 
-.featuresDivClass {
+.featuresDivClass, .aboutDivClass {
 	width: 48%;
 }
-
-.aboutDivClass {
-	width: 48%;
-}
-
 
 /* Middle Rectangle Image with code */
 
@@ -213,114 +204,9 @@ footer {
 }
 
 
-
-
-
-
-/* SERVICES PAGE */
-
-
-
-.services-header-img {
-	margin: 4%;
-	margin-top: 8%;
-}
-
-.servicesHeaderClass {
-	display: flex;
-	margin: 4%;
-	margin-bottom: 6%;
-	border-bottom: 2px solid black;
-	padding-bottom: 6%;
-	font-size: 18px;
-}
-
-.servicesHeaderDivClass {
-	display: flex;
-	flex-direction: column;
-}
-
-.navAndHeaderClass {
-	display: flex;
-	flex-direction: column;
-}
-
-/* 2 Column 6 Box Section */
-
-.twoColumn6BoxSectionClass {
-	display: flex;
-	height: 95%;
-	flex-wrap: wrap;
-	justify-content: center;
-	justify-content: space-evenly;
-	align-content: space-between;
-	margin: 1%;
-	margin-bottom: 7%;
-}
-
-.twoColumn6BoxSectionClass div {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	width: 46%;
-	box-sizing: border-box;
-	align-items: flex-start;
-	padding: 2%;
-	background-color:rgb(235, 235, 235);
-}
-
-.twoColumn6BoxSectionClass button {
-	margin-top: 6%;
-}
-
-.bottomSectionWithPhoto {
-	display: flex;
-	justify-content: space-around;
-	padding-top: 6%;
-	padding-bottom: 8%;
-	margin-left: 4%;
-	margin-right: 4%;
-	flex-direction: row;
-	border-top: 2px solid black;	
-}
-
-/* Bottom Facts Section with Photo */
-
-.services-info-img {
-	width: 48%;
-	height: 48%;
-}
-
-.bottomSectionWithoutPhoto {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	padding-right: 10%;
-}
-
-
-.bullet li {
-	list-style-type: square;
-	
-}
-
-.bullet {
-	box-sizing: border-box;
-	padding-left: 7%;
-	padding-top: 3%;
-}
-
-
-/* Products Page */
-
-
-.product-header-img {
-	margin: 4%;
-}
-
-
-
 /* Media Queries for Responsive Design */
+
+/* Tablet Responive Section 800px Max Width */
 
 
 @media (max-width: 800px){
@@ -364,26 +250,29 @@ footer {
 footer {
     margin-top: 1%;
 }
-
 }
+
+/* Mobile Responive Section 500px Max Width */
+
 
 @media (max-width: 500px){
 .NavLinksClass {
     flex-direction: column;
     align-items: center;
     height: 40vh;
-    
 }
+
 .NavClass a {
     padding-bottom: 3%;
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
-
 }
+
 .innovationBoxSecion {
     margin-bottom: 12%;
 }
+
 .topSectionClass {
     flex-direction: column;
     align-items: flex-start;
@@ -408,6 +297,7 @@ footer {
 .servicesDivClass, .productDivClass, .visionDivClass {
 	width: 95%;
 }
+
 .contactSectionClass {
     margin-top: 6%;
 }
@@ -415,5 +305,4 @@ footer {
 footer {
     padding-top: 4%;
 }
-
 }
